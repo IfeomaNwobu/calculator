@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:sans-serif;
     font-weight: normal;
 }
  
@@ -13,10 +13,10 @@ body {
 .container {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 2.5rem);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .container > button { 
@@ -45,3 +45,4 @@ body {
     padding: 20px;
     color: white;
     font-size: 2.5rem;
+}
