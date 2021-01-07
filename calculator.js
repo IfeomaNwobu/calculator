@@ -13,3 +13,12 @@
 // const firstNums = (x , y) => {
 
 // }
+
+const calculator = document.querySelector('.container');
+const buttons = document.querySelectorAll('button');
+
+buttons.addEventListener('click', e => {
+    if(e.target.matches('button')){
+        console.log('clicked');
+   }
+});

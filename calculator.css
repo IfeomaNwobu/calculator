@@ -7,43 +7,53 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("Images/earth-tone-background.jpeg");
+    background-image: url("Images/IMG_7961.JPG");
+    background-size: cover;
 }
 
 .container {
     display: grid;
+    grid-column: 1 / -1;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.display {
+    background-color: #ffeabb; /*rgba(199, 212, 155, 0.85);*/
+    padding: 20px;
+    color: black;
+    font-size: 2.5rem;
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/*style the keys*/
+.keys {
+    display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 70vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
     border-radius: 25px;
 }
 
-.container > button { 
-    border: 1px solid lightgrey;
+.keys > button { 
+    border: 0.5px solid white;
     cursor: pointer;
     font-size: 2rem;
     outline: none;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgb(167, 207, 241);
 }
 
-.container > button:hover {
+.keys > button:hover {
     background-color: rgba(255, 255, 255, .10);
 }
 
 .big-btn {
     grid-column: span 2;
-}
-
-.display {
-    grid-column: 1 / -1 ;
-    background-color: rgba(0, 0, 0, .5);
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    color: white;
-    font-size: 2.5rem;
 }
